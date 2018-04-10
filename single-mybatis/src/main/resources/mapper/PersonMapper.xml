@@ -6,4 +6,8 @@
     <select id="getAll" resultType="person">
         select * from person
     </select>
+
+    <insert id="insert" parameterType="person">
+        insert into person(name, age) values (#{name}, #{age});
+    </insert>
 </mapper>

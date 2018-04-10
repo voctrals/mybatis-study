@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface PersonMapper {
     List<Person> getAll();
-    Person getPerson(String id);
+    int insert(Person person);
 }
