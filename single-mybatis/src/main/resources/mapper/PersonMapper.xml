@@ -10,4 +10,8 @@
     <insert id="insert" parameterType="person">
         insert into person(name, age) values (#{name}, #{age});
     </insert>
+
+    <select id="getAllPerson" resultType="person">
+        select * from person
+    </select>
 </mapper>

@@ -37,6 +37,7 @@
     <mappers>
         <mapper resource="mapper/PersonMapper.xml"/>
         <mapper resource="mapper/StudentMapper.xml"/>
+        <mapper resource="mapper/OnlyMapperNoInterface.xml"/>
 
         <!--<mapper class="voctrals.study.mybatis.mapper.PersonMapper" />-->
         <!--<mapper class="voctrals.study.mybatis.mapper.StudentMapper" />-->

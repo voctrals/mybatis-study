@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 获取和使用sqlSession
  * <p>
- * getMapper处理方式
+ * 通过statement字符串进行
  *
  * @author voctrals
  */
@@ -31,7 +31,7 @@ public class SqlSessionAnotherWayProcess {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 
         try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
-            List<Person> allPerson = sqlSession.selectList("voctrals.study.mybatis.mapper.PersonMapper.getAll");
+            List<Person> allPerson = sqlSession.selectList("voctrals.study.mybatis.mapper.PersonMapper.getAllPerson");
             allPerson.forEach(System.out::println);
         }
     }
